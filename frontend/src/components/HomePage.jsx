@@ -8,7 +8,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchCycles = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/cycles/list');
+        const response = await axios.get('https://cycle-book-backend.onrender.com/cycles/list');
         setCycles(response.data);
       } catch (error) {
         console.error('Error fetching cycles:', error);
