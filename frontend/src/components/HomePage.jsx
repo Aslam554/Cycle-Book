@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Hero from './Hero';
 import Category from './Category';
+import r1 from '../assets/r1.jpg'
 const HomePage = () => {
   const [cycles, setCycles] = useState([]);
 
@@ -21,7 +22,8 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-4">
       <Hero />
-     
+      <div className='w-full lg:px-20 px-5 lg:h-[700px]  h-[600px] flex flex-col justify-center items-start gap-10 bg-cover bg-center pt-[20px]' style={{backgroundImage:`url(${r1})`}}>
+     </div>
       <h1 className="text-4xl font-bold text-gray-700 mb-6">Cycle Booking List</h1>
       <ul className="space-y-4">
         {cycles.map((cycle) => (

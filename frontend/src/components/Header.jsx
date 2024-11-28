@@ -52,16 +52,16 @@ const Header = () => {
     <>
       <div className='w-full px-16 py-2 bg-red-300 lg:flex hidden justify-between items-center gap-6'>
         <h1 className='text-sm font-semibold flex justify-center items-center
-gap-2'><FaPhoneVolume className='size-[18px]' /> <span>+91 123 456 7890</
+gap-2'><FaPhoneVolume className='size-[18px]' /> <span>+91 806 208 0934 </
           span></h1>
         <h1 className='text-sm font-semibold flex justify-center items-center
 gap-2'> <FaMapMarkerAlt className='size-[18px]' /> <span>great discount on every cycle book now?</span></h1>
-        <h1 className='text-sm font-semibold flex justify-center items-center gap-2'><MdEmail className='size-[18px]' /> <span>cyclebook@tezu.com</
+        <h1 className='text-sm font-semibold flex justify-center items-center gap-2'><MdEmail className='size-[18px]' /> <span>cyclebook@tezu.er.net</
         span></h1>
       </div >
 
       <nav className='w-full bg-gray-100 flex justify-between items-center gap0-1 lg:px-16 px-6 py-5 sticky top-0 z-50'>
-        <h1 className='text-red-500 font-bold lg:text-[30px] text-3xl underline italic'>Book Cycle!</h1>
+        <h1 className='text-red-500 font-bold lg:text-[30px] text-3xl underline italic'>My Cycle Pool!</h1>
         <ul className='lg:flex justify-center items-center gap-10 hidden'>
           {navItems.map(({ link, path }) => (
             <Link key={path} className='text-black text-sm uppercase font-semibold cursor-pointer px-4 py-2 rounded-lg hover:bg-red-500 hover:text-white' to={path} spy={true} offset={-100} smooth={true}>{link}</Link>

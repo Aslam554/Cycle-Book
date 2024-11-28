@@ -6,6 +6,8 @@ import Header from './components/Header';
 import Category from './components/Category';
 import Productsgrid from './components/Productsgrid';
 import Footer from './components/Footer';
+import Repair from './components/Repair';
+import Services from './components/Services';
 function App() {
   return (
     <Router>
@@ -15,12 +17,14 @@ function App() {
           <Link to="/" className="mr-4">Home</Link>
           <Link to="/book-cycle">Book Cycle</Link>
         </nav>
+        <Services/>
         <div className="p-4">
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/book-cycle" element={<BookCyclePage />} />
           </Routes>
         </div>
+        <Repair/>
         <Category/>
         <Productsgrid/>
         <Footer/>

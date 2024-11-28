@@ -27,6 +27,14 @@ const Footer = () => {
   }, [])
   return (
     <div id='contact' className='w-full flex flex-col justify-center items-center'>
+     
+      <div className='servicenum '>
+      <h1 className='text-4xl text-left font-bold text-themepurple underline
+italic'>Contact Us!</h1><br />
+        <h1>Bicycle Repairing Centre :    Mob No. +91 620 496 2171</h1>
+        <h1>Complaint Number :    Mob No. +91 980 165 0437</h1>
+        <h1>Customer Care Number :    Mob No. +91 620 049 1429</h1>
+      </div>
       <div className='w-full lg:px-20 px-5 py-[60px] bg-gray-100 grid lg:grid-cols-[auto,auto,auto,auto,auto] grid-cols-1 justify-between items-start lg:gap-3 gap-10'>
         <div data-aos="zoom-in" data-aos-delay="200" className='flex flex-row
 justify-center items-strt gap-10 grow'>
