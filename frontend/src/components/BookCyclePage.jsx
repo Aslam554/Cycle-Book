@@ -21,7 +21,7 @@ const BookCyclePage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/cycles/book', formData);
+      await axios.post('https://cycle-book-backend.onrender.com/cycles/book', formData);
       alert('Cycle booked successfully!');
       navigate('/');
     } catch (error) {
